@@ -7,7 +7,7 @@ import java.io.Serializable;
 import java.util.Objects;
 import com.mycompany.myapp.domain.enumeration.Origenes;
 import com.mycompany.myapp.domain.enumeration.Estatus;
-import com.mycompany.myapp.domain.enumeration.Interno,externo;
+import com.mycompany.myapp.domain.enumeration.Internoexterno;
 
 /**
  * A DTO for the Solicitud entity.
@@ -36,7 +36,7 @@ public class SolicitudDTO implements Serializable {
     private Boolean prevencion;
 
     @NotNull
-    private Interno,externo tiporesponsable;
+    private Internoexterno tiporesponsable;
 
     @NotNull
     private String nombre_responsable;
@@ -97,11 +97,11 @@ public class SolicitudDTO implements Serializable {
     public void setPrevencion(Boolean prevencion) {
         this.prevencion = prevencion;
     }
-    public Interno,externo getTiporesponsable() {
+    public Internoexterno getTiporesponsable() {
         return tiporesponsable;
     }
 
-    public void setTiporesponsable(Interno,externo tiporesponsable) {
+    public void setTiporesponsable(Internoexterno tiporesponsable) {
         this.tiporesponsable = tiporesponsable;
     }
     public String getNombre_responsable() {

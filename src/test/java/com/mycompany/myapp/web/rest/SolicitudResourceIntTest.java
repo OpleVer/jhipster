@@ -37,7 +37,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 import com.mycompany.myapp.domain.enumeration.Origenes;
 import com.mycompany.myapp.domain.enumeration.Estatus;
-import com.mycompany.myapp.domain.enumeration.Interno,externo;
+import com.mycompany.myapp.domain.enumeration.Internoexterno;
 /**
  * Test class for the SolicitudResource REST controller.
  *
@@ -68,8 +68,8 @@ public class SolicitudResourceIntTest {
     private static final Boolean DEFAULT_PREVENCION = false;
     private static final Boolean UPDATED_PREVENCION = true;
 
-    private static final Interno,externo DEFAULT_TIPORESPONSABLE = Interno,externo.interno;
-    private static final Interno,externo UPDATED_TIPORESPONSABLE = Interno,externo.externo;
+    private static final Internoexterno DEFAULT_TIPORESPONSABLE = Internoexterno.interno;
+    private static final Internoexterno UPDATED_TIPORESPONSABLE = Internoexterno.externo;
 
     private static final String DEFAULT_NOMBRE_RESPONSABLE = "AAAAAAAAAA";
     private static final String UPDATED_NOMBRE_RESPONSABLE = "BBBBBBBBBB";

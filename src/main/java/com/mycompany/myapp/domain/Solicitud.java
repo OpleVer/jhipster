@@ -14,7 +14,7 @@ import com.mycompany.myapp.domain.enumeration.Origenes;
 
 import com.mycompany.myapp.domain.enumeration.Estatus;
 
-import com.mycompany.myapp.domain.enumeration.Interno,externo;
+import com.mycompany.myapp.domain.enumeration.Internoexterno;
 
 /**
  * A Solicitud.
@@ -56,7 +56,7 @@ public class Solicitud implements Serializable {
 
     @NotNull
     @Field("tiporesponsable")
-    private Interno,externo tiporesponsable;
+    private Internoexterno tiporesponsable;
 
     @NotNull
     @Field("nombre_responsable")
@@ -161,16 +161,16 @@ public class Solicitud implements Serializable {
         this.prevencion = prevencion;
     }
 
-    public Interno,externo getTiporesponsable() {
+    public Internoexterno getTiporesponsable() {
         return tiporesponsable;
     }
 
-    public Solicitud tiporesponsable(Interno,externo tiporesponsable) {
+    public Solicitud tiporesponsable(Internoexterno tiporesponsable) {
         this.tiporesponsable = tiporesponsable;
         return this;
     }
 
-    public void setTiporesponsable(Interno,externo tiporesponsable) {
+    public void setTiporesponsable(Internoexterno tiporesponsable) {
         this.tiporesponsable = tiporesponsable;
     }
 
