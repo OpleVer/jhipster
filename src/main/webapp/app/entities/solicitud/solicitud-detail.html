@@ -1,0 +1,55 @@
+
+<div>
+    <h2><span>Solicitud</span> {{vm.solicitud.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="jhipsterApp.solicitud.numero_solicitud">Numero Solicitud</span></dt>
+        <dd>
+            <span>{{vm.solicitud.numero_solicitud}}</span>
+        </dd>
+        <dt><span>Fecha</span></dt>
+        <dd>
+            <span>{{vm.solicitud.fecha | date:'mediumDate'}}</span>
+        </dd>
+        <dt><span>Hora</span></dt>
+        <dd>
+            <span>{{vm.solicitud.hora | date:'medium'}}</span>
+        </dd>
+        <dt><span data-translate="jhipsterApp.solicitud.acto_certificar">Acto Certificar</span></dt>
+        <dd>
+            <span>{{vm.solicitud.acto_certificar}}</span>
+        </dd>
+        <dt><span>Origen</span></dt>
+        <dd>
+            <span>{{vm.solicitud.origen}}</span>
+        </dd>
+        <dt><span>Estatus</span></dt>
+        <dd>
+            <span>{{vm.solicitud.estatus}}</span>
+        </dd>
+        <dt><span>Prevencion</span></dt>
+        <dd>
+            <span>{{vm.solicitud.prevencion}}</span>
+        </dd>
+        <dt><span>Tiporesponsable</span></dt>
+        <dd>
+            <span data-translate="{{'jhipsterApp.Interno,externo.' + vm.solicitud.tiporesponsable}}">{{vm.solicitud.tiporesponsable}}</span>
+        </dd>
+        <dt><span data-translate="jhipsterApp.solicitud.nombre_responsable">Nombre Responsable</span></dt>
+        <dd>
+            <span>{{vm.solicitud.nombre_responsable}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+
+    <button type="button" ui-sref="solicitud-detail.edit({id:vm.solicitud.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down"> Edit</span>
+    </button>
+</div>

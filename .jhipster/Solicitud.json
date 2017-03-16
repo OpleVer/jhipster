@@ -1,0 +1,70 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "numero_solicitud",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "fecha",
+            "fieldType": "LocalDate",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "hora",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "acto_certificar",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "origen",
+            "fieldType": "Origenes",
+            "fieldValues": "Acajete , Acatlan , Acayucan , Actopan , Acula , Acultzingo , AguaDulce , AlamoTemapache , Alpatlahuac",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "estatus",
+            "fieldType": "Estatus",
+            "fieldValues": "registrada,en proceso,concluida",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "prevencion",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "tiporesponsable",
+            "fieldType": "Interno,externo",
+            "fieldValues": "interno,externo",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "nombre_responsable",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "dto": "mapstruct",
+    "service": "serviceImpl",
+    "entityTableName": "solicitud",
+    "pagination": "pager"
+}
